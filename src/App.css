@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   background-color: #f8f9fa;
   color: #343a40;
@@ -12,4 +13,53 @@
     text-align: center;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
+}
+.sample-text{
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    color: #722658;
+  }
+  &:focus{
+    outline: none;
+  }
+  &:active{
+    transform: scale(0.95);
+  }
+}
+.card{
+  border: none;
+  background-color: #ffff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow : 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.profile-section{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+.react-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+}
+.profile-data{
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+h4,p{
+  margin: 0px;
 }
